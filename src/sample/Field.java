@@ -6,10 +6,10 @@ public class Field {
     private int y;
     private boolean is_taken;
 
-    Field(int x, int y){
+    Field(int x, int y, boolean is_taken){
         this.x = x;
         this.y = y;
-        this.is_taken = false;
+        this.is_taken = is_taken;
     }
 
 
