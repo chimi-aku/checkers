@@ -14,7 +14,7 @@ public class Board {
     private Field [][] fields;
 
     // valid_moves_method
-
+    private List<Field> valid_moves;
 
 
     Board(){
@@ -100,10 +100,10 @@ public class Board {
 
         if(fields[piece.get_row()][piece.get_col()].get_is_taken()){ // Wywala błąd tablicy fields przy używaniu pustego pola
 
-            List<Field> valid_moves = valid_moves(piece);
+            valid_moves = valid_moves(piece);
             List<Integer> new_position = select_position(1,2);
 
-            while(select_position().get(0) != valid_moves)
+
 
         }
         else{
@@ -118,9 +118,17 @@ public class Board {
     public List<Integer> select_position(int row, int col){ // tymczasowe argumenrty, tu będziemy przekazywać kliknięcie
 
         List<Integer> new_position = new LinkedList<Integer>();
-        new_position.add(row);
-        new_position.add(col);
+
         // row on index 0, col on index 1
+
+        for(int i = 0; i < valid_moves.size(); i++){
+            if(valid_moves.get(i).get_row() == row && valid_moves.get(i).get_col() == col){
+                new_position.add(row);
+                new_position.add(col);
+                return new_position;
+            }
+        }
+
 
         return new_position;
     }
