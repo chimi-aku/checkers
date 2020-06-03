@@ -6,6 +6,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.awt.*;
+import java.util.List;
+
 public class Main extends Application {
 
     @Override
@@ -24,6 +27,6 @@ public class Main extends Application {
         board.setup_board();
 
 
-        board.move_piece(board.get_piece(7,7));
+        board.move_piece(board.get_piece(7,7);
     }
 }

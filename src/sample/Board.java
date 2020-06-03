@@ -99,17 +99,33 @@ public class Board {
     public void move_piece(Piece piece){
 
         if(fields[piece.get_row()][piece.get_col()].get_is_taken()){ // Wywala błąd tablicy fields przy używaniu pustego pola
+
             List<Field> valid_moves = valid_moves(piece);
+            List<Integer> new_position = select_position(1,2);
+
+            while(select_position().get(0) != valid_moves)
+
         }
         else{
             System.out.print("Piece doesn't exist on this field");
+            return;
         }
 
 
 
     }
 
-    public Piece get_piece(int row, int col){
+    public List<Integer> select_position(int row, int col){ // tymczasowe argumenrty, tu będziemy przekazywać kliknięcie
+
+        List<Integer> new_position = new LinkedList<Integer>();
+        new_position.add(row);
+        new_position.add(col);
+        // row on index 0, col on index 1
+
+        return new_position;
+    }
+
+    public Piece get_piece(int row, int col, List<Integer> integers){
 
         for( int i = 0; i < pieces_list.size(); i++){
             if(pieces_list.get(i).get_row() == row && pieces_list.get(i).get_col() == col)
