@@ -25,28 +25,23 @@ public class Board {
         // Make a list of pieces
 
         for(int row = 0; row <8; row++ )
-            for(int col = 0; col < 8; col++){
-                fields[row][col] = new Field(col, row, false);
-                System.out.print(" | pole: X "+ fields[row][col].get_X() + " Y " + fields[row][col].get_X() + " taken: " + fields[row][col].get_is_taken() + " \n");
-            }
-
-
-        for(int row = 0; row <8; row++ )
             for(int col = 0; col < 8; col++)
             {
                 if(row <= 2 && ((row % 2 != 0 && col % 2 != 0) || (row % 2 == 0 && col % 2 == 0))){
                     pieces_list.add(new Piece("white", col, row));
-                    fields[row][col].set_is_taken(true);
-                    System.out.print( "row: " + row + " " + "col: "+ col + " | pole: X "+ fields[row][col].get_X() + " Y " + fields[row][col].get_X() + " taken: " + fields[row][col].get_is_taken() + " \n");
+                    fields[row][col] = new Field(row, col, true);
+                    System.out.print("pole Row: "+ fields[row][col].get_row() + " Col: " + fields[row][col].get_col() + " taken: " + fields[row][col].get_is_taken() + " \n");
+                    System.out.print( "row: " + row + " " + "col: "+ col + "\n");
                 }
                 else if(row >= 5 && ((row % 2 != 0 && col % 2 != 0) || (row % 2 == 0 && col % 2 == 0))){
                     pieces_list.add(new Piece("black", col, row));
-                    fields[row][col].set_is_taken(true);
-                    System.out.print( "row: " + row + " " + "col: "+ col + " | pole: X "+ fields[row][col].get_X() + " Y " + fields[row][col].get_X() + " taken: " + fields[row][col].get_is_taken() + " \n");
+                    fields[row][col] = new Field(row, col, true);
+                    System.out.print("pole Row: "+ fields[row][col].get_row() + " Col: " + fields[row][col].get_col() + " taken: " + fields[row][col].get_is_taken() + " \n");
+                    System.out.print( "row: " + row + " " + "col: "+ col + "\n");
                 }
-
                 else{
-                    //System.out.print("| pole: X "+ fields[row][col].get_X() + " Y " + fields[row][col].get_X() + " taken: " + fields[row][col].get_is_taken() + " \n");
+                    fields[row][col] = new Field(row, col, false);
+                    System.out.print("pole Row: "+ fields[row][col].get_row() + " Col: " + fields[row][col].get_col() + " taken: " + fields[row][col].get_is_taken() + " \n");
                 }
             }
 
