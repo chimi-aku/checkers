@@ -46,5 +46,8 @@ public class Piece {
         this.color = color;
     }
 
+    public void set_is_king(boolean x){ this.is_king = x; }
+
+
 
 }

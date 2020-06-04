@@ -27,6 +27,6 @@ public class Main extends Application {
         board.setup_board();
 
 
-        board.move_piece(board.get_piece(7,7);
+        board.move_piece(board.get_piece(2,0));
     }
 }

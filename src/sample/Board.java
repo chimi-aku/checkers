@@ -101,9 +101,21 @@ public class Board {
         if(fields[piece.get_row()][piece.get_col()].get_is_taken()){ // Wywala błąd tablicy fields przy używaniu pustego pola
 
             valid_moves = valid_moves(piece);
-            List<Integer> new_position = select_position(1,2);
+            List<Integer> new_position = select_position(3,1); // DO ZMIANY!!!!
 
+            fields[piece.get_row()][piece.get_col()].set_is_taken(false);
 
+            //System.out.print("Piece pos: " +"row: " + piece.get_row() +  " col: " + piece.get_col() + " is king: " + piece.is_king() + "\n");
+            //System.out.print("Field taken value: " + fields[piece.get_row()][piece.get_col()].get_is_taken() + "\n");
+
+            piece.set_row(new_position.get(0));
+            piece.set_col(new_position.get(1));
+            fields[piece.get_row()][piece.get_col()].set_is_taken(true);
+
+            transform_to_king(piece);
+
+            //System.out.print("Piece pos: " +"row: " + piece.get_row() +  " col: " + piece.get_col() + " is king: " + piece.is_king() + "\n");
+            //System.out.print("Field taken value: " + fields[piece.get_row()][piece.get_col()].get_is_taken() + "\n");
 
         }
         else{
@@ -115,11 +127,15 @@ public class Board {
 
     }
 
+    // ***********WAŻNE!!!!************
+    // Dopisać validacje klinięć bo wywala błędy przy niedozwolonym polu i usunąć tymczasowe row i col z move_piece()
+
     public List<Integer> select_position(int row, int col){ // tymczasowe argumenrty, tu będziemy przekazywać kliknięcie
 
         List<Integer> new_position = new LinkedList<Integer>();
 
         // row on index 0, col on index 1
+
 
         for(int i = 0; i < valid_moves.size(); i++){
             if(valid_moves.get(i).get_row() == row && valid_moves.get(i).get_col() == col){
@@ -133,7 +149,7 @@ public class Board {
         return new_position;
     }
 
-    public Piece get_piece(int row, int col, List<Integer> integers){
+    public Piece get_piece(int row, int col){
 
         for( int i = 0; i < pieces_list.size(); i++){
             if(pieces_list.get(i).get_row() == row && pieces_list.get(i).get_col() == col)
@@ -141,6 +157,14 @@ public class Board {
         }
 
         return new Piece("wrong_cords", -1, -1);
+    }
+
+    public void transform_to_king(Piece piece){
+
+        if(piece.get_color().equals("white") && piece.get_row() == 7)
+            piece.set_is_king(true);
+        else if(piece.get_color().equals("black") && piece.get_row() == 0)
+            piece.set_is_king(true);
     }
 
 }
