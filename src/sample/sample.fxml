@@ -7,7 +7,7 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="525.0" prefHeight="600.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <children>
-        <ImageView fitHeight="400.0" fitWidth="400.0" layoutX="63.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="400.0" fitWidth="400.0" layoutX="63.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
             <image>
                 <Image url="@../img/board.png" />
             </image>
@@ -22,68 +22,187 @@
         <TextField layoutX="63.0" layoutY="102.0" prefHeight="50.0" prefWidth="50.0" text="12" />
         <TextField layoutX="411.0" layoutY="102.0" prefHeight="50.0" prefWidth="50.0" text="12" />
       <Button fx:id="r0c0" layoutX="62.0" layoutY="523.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r0c1" layoutX="113.0" layoutY="523.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r0c2" layoutX="162.0" layoutY="523.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r0c3" layoutX="214.0" layoutY="523.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="50.0" />
-      <Button fx:id="r0c4" layoutX="263.0" layoutY="523.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="50.0" />
-      <Button fx:id="r0c5" layoutX="313.0" layoutY="523.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="50.0" />
-      <Button fx:id="r0c6" layoutX="363.0" layoutY="523.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="50.0" />
-      <Button fx:id="r0c7" layoutX="413.0" layoutY="523.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="50.0" />
-      <Button fx:id="r1c0" layoutX="62.0" layoutY="473.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r1c1" layoutX="113.0" layoutY="473.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r1c2" layoutX="162.0" layoutY="473.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r1c3" layoutX="213.0" layoutY="473.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r1c4" layoutX="262.0" layoutY="473.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r1c5" layoutX="312.0" layoutY="473.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="c1c6" layoutX="362.0" layoutY="473.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r1c7" layoutX="412.0" layoutY="473.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r2c0" layoutX="62.0" layoutY="423.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r2c1" layoutX="113.0" layoutY="423.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r2c2" layoutX="162.0" layoutY="423.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r2c3" layoutX="213.0" layoutY="423.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r2c4" layoutX="262.0" layoutY="423.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r2c5" layoutX="311.0" layoutY="423.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r2c6" layoutX="362.0" layoutY="423.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r2c7" layoutX="412.0" layoutY="423.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r3c0" layoutX="62.0" layoutY="373.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r3c1" layoutX="113.0" layoutY="373.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r3c2" layoutX="162.0" layoutY="373.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r3c3" layoutX="213.0" layoutY="373.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r3c4" layoutX="262.0" layoutY="373.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r3c5" layoutX="312.0" layoutY="373.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r3c6" layoutX="362.0" layoutY="373.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r3c7" layoutX="412.0" layoutY="373.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r4c0" layoutX="62.0" layoutY="323.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r4c1" layoutX="113.0" layoutY="323.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0"  prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r4c2" layoutX="162.0" layoutY="323.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r4c3" layoutX="213.0" layoutY="323.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r4c4" layoutX="262.0" layoutY="323.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r4c5" layoutX="312.0" layoutY="323.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r4c6" layoutX="362.0" layoutY="323.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r4c7" layoutX="412.0" layoutY="323.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r5c0" layoutX="62.0" layoutY="275.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r5c1" layoutX="113.0" layoutY="275.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r5c2" layoutX="162.0" layoutY="275.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r5c3" layoutX="213.0" layoutY="275.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r5c4" layoutX="262.0" layoutY="275.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r5c5" layoutX="312.0" layoutY="275.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r5c6" layoutX="362.0" layoutY="275.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r5c7" layoutX="412.0" layoutY="275.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r6c0" layoutX="62.0" layoutY="225.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r6c1" layoutX="113.0" layoutY="225.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r6c2" layoutX="162.0" layoutY="225.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r6c3" layoutX="213.0" layoutY="225.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r0c1" layoutX="113.0" layoutY="523.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r0c2" layoutX="162.0" layoutY="523.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r0c3" layoutX="214.0" layoutY="523.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="r0c4" layoutX="263.0" layoutY="523.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="r0c5" layoutX="313.0" layoutY="523.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="r0c6" layoutX="363.0" layoutY="523.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="r0c7" layoutX="413.0" layoutY="523.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="r1c0" layoutX="62.0" layoutY="473.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r1c1" layoutX="113.0" layoutY="473.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r1c2" layoutX="162.0" layoutY="473.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r1c3" layoutX="213.0" layoutY="473.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r1c4" layoutX="262.0" layoutY="473.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r1c5" layoutX="312.0" layoutY="473.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="c1c6" layoutX="362.0" layoutY="473.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r1c7" layoutX="412.0" layoutY="473.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r2c0" layoutX="62.0" layoutY="423.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r2c1" layoutX="113.0" layoutY="423.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r2c2" layoutX="162.0" layoutY="423.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r2c3" layoutX="213.0" layoutY="423.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r2c4" layoutX="262.0" layoutY="423.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r2c5" layoutX="311.0" layoutY="423.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r2c6" layoutX="362.0" layoutY="423.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r2c7" layoutX="412.0" layoutY="423.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r3c0" layoutX="62.0" layoutY="373.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r3c1" layoutX="113.0" layoutY="373.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r3c2" layoutX="162.0" layoutY="373.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r3c3" layoutX="213.0" layoutY="373.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r3c4" layoutX="262.0" layoutY="373.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r3c5" layoutX="312.0" layoutY="373.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r3c6" layoutX="362.0" layoutY="373.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r3c7" layoutX="412.0" layoutY="373.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r4c0" layoutX="62.0" layoutY="323.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r4c1" layoutX="113.0" layoutY="323.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r4c2" layoutX="162.0" layoutY="323.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r4c3" layoutX="213.0" layoutY="323.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r4c4" layoutX="262.0" layoutY="323.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r4c5" layoutX="312.0" layoutY="323.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r4c6" layoutX="362.0" layoutY="323.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r4c7" layoutX="412.0" layoutY="323.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r5c0" layoutX="62.0" layoutY="275.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r5c1" layoutX="113.0" layoutY="275.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r5c2" layoutX="162.0" layoutY="275.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r5c3" layoutX="213.0" layoutY="275.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r5c4" layoutX="262.0" layoutY="275.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r5c5" layoutX="312.0" layoutY="275.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r5c6" layoutX="362.0" layoutY="275.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r5c7" layoutX="412.0" layoutY="275.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r6c0" layoutX="62.0" layoutY="225.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r6c1" layoutX="113.0" layoutY="225.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r6c2" layoutX="162.0" layoutY="225.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r6c3" layoutX="213.0" layoutY="225.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
       <Button fx:id="r6c4" layoutX="262.0" layoutY="225.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r6c5" layoutX="311.0" layoutY="225.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r6c6" layoutX="362.0" layoutY="225.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r6c7" layoutX="412.0" layoutY="225.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r6c5" layoutX="311.0" layoutY="225.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r6c6" layoutX="362.0" layoutY="225.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r6c7" layoutX="412.0" layoutY="225.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
       <Button fx:id="r7c7" layoutX="412.0" layoutY="173.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r7c6" layoutX="362.0" layoutY="175.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r7c5" layoutX="311.0" layoutY="175.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r7c4" layoutX="262.0" layoutY="175.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r7c3" layoutX="213.0" layoutY="175.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r7c2" layoutX="162.0" layoutY="175.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r7c1" layoutX="113.0" layoutY="175.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
-      <Button fx:id="r7c0" layoutX="61.0" layoutY="175.0" mnemonicParsing="false" onAction="#click_on_field"  opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r7c6" layoutX="362.0" layoutY="175.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r7c5" layoutX="311.0" layoutY="175.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r7c4" layoutX="262.0" layoutY="175.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r7c3" layoutX="213.0" layoutY="175.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r7c2" layoutX="162.0" layoutY="175.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r7c1" layoutX="113.0" layoutY="175.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <Button fx:id="r7c0" layoutX="61.0" layoutY="175.0" mnemonicParsing="false" onAction="#click_on_field" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+      <ImageView fx:id="wp5" fitHeight="50.0" fitWidth="52.0" layoutX="113.0" layoutY="473.0" onMouseClicked="#click_on_piece" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/white_mockup.png" />
+         </image></ImageView>
+      <ImageView fx:id="wp9" fitHeight="50.0" fitWidth="52.0" layoutX="62.0" layoutY="423.0" onMouseClicked="#click_on_piece" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/white_mockup.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="wp1" fitHeight="50.0" fitWidth="52.0" layoutX="62.0" layoutY="523.0" onMouseClicked="#click_on_piece" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/white_mockup.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="wp10" fitHeight="50.0" fitWidth="50.0" layoutX="163.0" layoutY="423.0" onMouseClicked="#click_on_piece" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/white_mockup.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="wp2" fitHeight="50.0" fitWidth="50.0" layoutX="163.0" layoutY="523.0" onMouseClicked="#click_on_piece" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/white_mockup.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="wp6" fitHeight="50.0" fitWidth="52.0" layoutX="213.0" layoutY="473.0" onMouseClicked="#click_on_piece" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/white_mockup.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="wp11" fitHeight="50.0" fitWidth="52.0" layoutX="262.0" layoutY="423.0" onMouseClicked="#click_on_piece" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/white_mockup.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="wp7" fitHeight="50.0" fitWidth="52.0" layoutX="312.0" layoutY="473.0" onMouseClicked="#click_on_piece" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/white_mockup.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="wp3" fitHeight="50.0" fitWidth="50.0" layoutX="263.0" layoutY="523.0" onMouseClicked="#click_on_piece" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/white_mockup.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="wp12" fitHeight="50.0" fitWidth="52.0" layoutX="362.0" layoutY="423.0" onMouseClicked="#click_on_piece" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/white_mockup.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="wp8" fitHeight="50.0" fitWidth="50.0" layoutX="411.0" layoutY="473.0" onMouseClicked="#click_on_piece" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/white_mockup.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="wp4" fitHeight="50.0" fitWidth="52.0" layoutX="362.0" layoutY="523.0" onMouseClicked="#click_on_piece" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/white_mockup.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-170.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="bp1" fitHeight="50.0" fitWidth="52.0" layoutX="113.0" layoutY="173.0" onMouseClicked="#click_on_piece" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/black_mockup.png" />
+         </image></ImageView>
+      <ImageView fx:id="bp9" fitHeight="50.0" fitWidth="52.0" layoutX="114.0" layoutY="273.0" onMouseClicked="#click_on_piece" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/black_mockup.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bp2" fitHeight="50.0" fitWidth="52.0" layoutX="212.0" layoutY="173.0" onMouseClicked="#click_on_piece" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/black_mockup.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bp3" fitHeight="50.0" fitWidth="50.0" layoutX="313.0" layoutY="173.0" onMouseClicked="#click_on_piece" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/black_mockup.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bp8" fitHeight="50.0" fitWidth="52.0" layoutX="363.0" layoutY="223.0" onMouseClicked="#click_on_piece" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/black_mockup.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bp10" fitHeight="50.0" fitWidth="50.0" layoutX="212.0" layoutY="275.0" onMouseClicked="#click_on_piece" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/black_mockup.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bp5" fitHeight="50.0" fitWidth="52.0" layoutX="63.0" layoutY="223.0" onMouseClicked="#click_on_piece" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/black_mockup.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bp6" fitHeight="50.0" fitWidth="52.0" layoutX="162.0" layoutY="223.0" onMouseClicked="#click_on_piece" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/black_mockup.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bp7" fitHeight="50.0" fitWidth="50.0" layoutX="263.0" layoutY="223.0" onMouseClicked="#click_on_piece" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/black_mockup.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bp11" fitHeight="50.0" fitWidth="52.0" layoutX="312.0" layoutY="273.0" onMouseClicked="#click_on_piece" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/black_mockup.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bp12" fitHeight="50.0" fitWidth="50.0" layoutX="413.0" layoutY="273.0" onMouseClicked="#click_on_piece" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/black_mockup.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bp4" fitHeight="50.0" fitWidth="52.0" layoutX="413.0" layoutY="173.0" onMouseClicked="#click_on_piece" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/black_mockup.png" />
+         </image>
+      </ImageView>
     </children>
 </Pane>

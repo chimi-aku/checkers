@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.event.ActionEvent;
 import javafx.scene.Node;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 
@@ -145,21 +146,82 @@ public class Controller {
 
 
     @FXML
+    private ImageView wp1;
+    @FXML
+    private ImageView wp2;
+    @FXML
+    private ImageView wp3;
+    @FXML
+    private ImageView wp4;
+    @FXML
+    private ImageView wp5;
+    @FXML
+    private ImageView wp6;
+    @FXML
+    private ImageView wp7;
+    @FXML
+    private ImageView wp8;
+    @FXML
+    private ImageView wp9;
+    @FXML
+    private ImageView wp10;
+    @FXML
+    private ImageView wp11;
+    @FXML
+    private ImageView wp12;
+
+    @FXML
+    private ImageView bp1;
+    @FXML
+    private ImageView bp2;
+    @FXML
+    private ImageView bp3;
+    @FXML
+    private ImageView bp4;
+    @FXML
+    private ImageView bp5;
+    @FXML
+    private ImageView bp6;
+    @FXML
+    private ImageView bp7;
+    @FXML
+    private ImageView bp8;
+    @FXML
+    private ImageView bp9;
+    @FXML
+    private ImageView bp10;
+    @FXML
+    private ImageView bp11;
+    @FXML
+    private ImageView bp12;
+
+
+
+
+
+    @FXML
     public int[] click_on_field(ActionEvent e){
 
         Button btn = (Button) e.getSource();
         String id = btn.getId();
-        System.out.print(id);
+        //System.out.print(id);
 
         int row = Character.getNumericValue(id.charAt(1));
         int col = Character.getNumericValue(id.charAt(3));
-        System.out.print("\n" + row + " " + col + "\n");
+        System.out.print("\nPole: " + row + " " + col + "\n");
 
         int [] cords = new int[2];
         cords[0] = row;
         cords[1] = col;
 
         return cords;
+
+    }
+
+    @FXML
+    public void click_on_piece(MouseEvent e){
+
+        System.out.print("pionek\n");
 
     }
 
